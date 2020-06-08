@@ -1,0 +1,185 @@
+
+
+/*------   Google Fonts    -----*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
+
+/*     Default Page Layout - Start    */
+:root{
+    font-size: 15px;
+
+    /* color-schemes  */ 
+    --primary-color: #333333;
+    --secondary-color: #ffffff;
+    --highlight-color: #2A4A64;
+
+    /* font  */ 
+    --text-font: 'Roboto', normal;
+    --title-font: 'Montserrat', normal;
+}
+
+
+section{
+    padding: 1rem 0;
+}
+
+h1,
+h2{
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1rem;  
+}
+
+
+ul{
+    padding: 0;
+    list-style-position: inside;
+}
+
+li,
+p{
+    margin: 0;
+    padding: 0.1rem 0;
+    text-transform: none;
+    line-height: 1rem;
+    font-size: 0.7rem;
+    font-family: var(--text-font);
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 20rem 1fr; /* to make sure that image always stays the same*/
+}
+
+.box{
+    padding: 1rem 0;
+}
+
+.row{
+    padding: 0.2rem 0;
+}
+
+
+
+
+
+
+.title{
+    text-transform: uppercase;
+}
+
+
+/*.dark{
+    --secondary-color: #333333;
+    --primary-color: #ffffff;
+    --highlight-color: #2A4A64;
+}
+
+.light{ 
+    --primary-color: #333333;
+    --secondary-color: #ffffff;
+    --highlight-color: #2A4A64;
+} */
+
+/*     Default Page Layout - End    */
+
+
+/*     L - Default - Start    */
+.col-left{
+    background-color: var(--highlight-color);
+    color: var(--secondary-color); 
+    padding: 1rem;
+}
+
+i{
+    color: var(--secondary-color);
+    font-size: 0.5rem;
+}
+
+.label{
+    min-width: 4rem;
+}
+
+/*     L - Default - End    */
+
+
+/*     L - Personal Info - Start    */
+
+.round-img{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-image: url("./img/profilbild.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 1rem auto;
+}
+
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* to make sure that image always stays the same*/
+    grid-gap: 0.5rem;
+    padding: 0.1rem 0;
+}
+
+/*     L - Personal Info - End    */
+
+
+/*     L - Tech Stack & Programs - Start    */
+
+progress::-webkit-progress-bar {
+    /* style rules */
+    background-color: black;
+  }
+
+progress::-webkit-progress-value {
+    /* style rules */
+}
+/* other possibility to get it aligned???*/
+
+
+/*     L - Tech Stack & Programs - End    */
+
+
+/*     R - Default - Start    */
+.col-right{
+    color: #000000;
+    padding: 1rem;
+    margin-left: 0.5rem;
+}
+
+
+/*     R - Default - End    */
+
+
+/*     R - Professional Experience - Start    */
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; /* to make sure that image always stays the same*/
+    grid-gap: 0.5rem;
+    padding: 0.1rem 0;
+}
+
+.description{
+    grid-column: span 2;
+}
+
+
+/*     R - Professional Experience - End    */
