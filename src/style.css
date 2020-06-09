@@ -18,6 +18,11 @@
     --title-font: 'Montserrat', normal;
 }
 
+html, 
+body{
+    width: 100%;
+}
+
 
 section{
     padding: 1rem 0;
@@ -33,26 +38,31 @@ h2{
 
 h1{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    /*font-size: 1.5rem;*/ /*mobile*/
 }
 
 h2{
-    font-size: 1rem;  
+    font-size: 1.3rem;
+    /*font-size: 1rem;*/ /*mobile*/
 }
 
 
 ul{
     padding: 0;
-    list-style-position: inside;
+    padding-left: 1rem;
 }
+   
 
 li,
 p{
     margin: 0;
     padding: 0.1rem 0;
     text-transform: none;
-    line-height: 1rem;
-    font-size: 0.7rem;
+    /*line-height: 1rem;*/ /*mobile*/
+    line-height: 1.3rem;
+    font-size: 1.1rem;
+    /*font-size: 0.7rem;*/ /*mobile*/
     font-family: var(--text-font);
 }
 
@@ -64,19 +74,20 @@ a{
 
 .main-grid{
     display: grid;
-    grid-template-columns: 20rem 1fr; /* to make sure that image always stays the same*/
+    grid-template-columns: 25rem 1fr;
+    /*grid-template-columns: 20rem 1fr;*/ /*mobile*/ /* to make sure that image always stays the same*/
+    padding: 1rem 10rem;                /*screen*/
 }
 
 .box{
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    /*padding: 1rem 0;*/ /*mobile*/
 }
 
 .row{
-    padding: 0.2rem 0;
+    padding: 0.5rem 0;
+    /*padding: 0.2rem 0;*/ /*mobile*/
 }
-
-
-
 
 
 
@@ -104,7 +115,8 @@ a{
 .col-left{
     background-color: var(--highlight-color);
     color: var(--secondary-color); 
-    padding: 1rem;
+    padding: 1.5rem;
+    /*padding: 1rem;*/ /*mobile*/
 }
 
 i{
@@ -112,8 +124,10 @@ i{
     font-size: 0.5rem;
 }
 
+/*look for better solution*/
 .label{
-    min-width: 4rem;
+    min-width: 6.5rem;
+    /*min-width: 4rem;*/ /*mobile*/
 }
 
 /*     L - Default - End    */
@@ -124,8 +138,10 @@ i{
 .round-img{
     border: 2px solid #ffffff;
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
+    /*width: 5rem;*/ /*mobile*/
+    /*height: 5rem;*/ /*mobile*/
     background-image: url("./img/profilbild.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,6 +159,10 @@ i{
 
 
 /*     L - Tech Stack & Programs - Start    */
+
+.padding-top{
+    padding-top: 1.5rem;
+}
 
 progress::-webkit-progress-bar {
     /* style rules */
