@@ -39,30 +39,25 @@ h2{
 h1{
     text-align: center;
     font-size: 1.8rem;
-    /*font-size: 1.5rem;*/ /*mobile*/
 }
+
 
 h2{
     font-size: 1.3rem;
-    /*font-size: 1rem;*/ /*mobile*/
 }
-
 
 ul{
     padding: 0;
     padding-left: 1rem;
 }
-   
 
 li,
 p{
     margin: 0;
     padding: 0.1rem 0;
     text-transform: none;
-    /*line-height: 1rem;*/ /*mobile*/
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     font-size: 1.1rem;
-    /*font-size: 0.7rem;*/ /*mobile*/
     font-family: var(--text-font);
 }
 
@@ -75,24 +70,36 @@ a{
 .main-grid{
     display: grid;
     grid-template-columns: 25rem 1fr;
-    /*grid-template-columns: 20rem 1fr;*/ /*mobile*/ /* to make sure that image always stays the same*/
     padding: 1rem 10rem;                /*screen*/
+}
+
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* to make sure that image always stays the same*/
+    grid-gap: 0.5rem;
+    padding: 0.1rem 0;
 }
 
 .box{
     padding: 1.5rem 0;
-    /*padding: 1rem 0;*/ /*mobile*/
 }
 
 .row{
     padding: 0.5rem 0;
-    /*padding: 0.2rem 0;*/ /*mobile*/
 }
 
 
 
 .title{
     text-transform: uppercase;
+}
+
+.centered{
+    text-align: center;
+}
+
+.centered i{
+    padding: 0.5rem 1rem 0 1rem;
 }
 
 
@@ -116,7 +123,6 @@ a{
     background-color: var(--highlight-color);
     color: var(--secondary-color); 
     padding: 1.5rem;
-    /*padding: 1rem;*/ /*mobile*/
 }
 
 i{
@@ -127,55 +133,9 @@ i{
 /*look for better solution*/
 .label{
     min-width: 6.5rem;
-    /*min-width: 4rem;*/ /*mobile*/
 }
 
 /*     L - Default - End    */
-
-
-/*     L - Personal Info - Start    */
-
-.round-img{
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    /*width: 5rem;*/ /*mobile*/
-    /*height: 5rem;*/ /*mobile*/
-    background-image: url("./img/profilbild.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto 1rem auto;
-}
-
-.col-2{
-    display: grid;
-    grid-template-columns: 1fr 4fr; /* to make sure that image always stays the same*/
-    grid-gap: 0.5rem;
-    padding: 0.1rem 0;
-}
-
-/*     L - Personal Info - End    */
-
-
-/*     L - Tech Stack & Programs - Start    */
-
-.padding-top{
-    padding-top: 1.5rem;
-}
-
-progress::-webkit-progress-bar {
-    /* style rules */
-    background-color: black;
-  }
-
-progress::-webkit-progress-value {
-    /* style rules */
-}
-/* other possibility to get it aligned???*/
-
-
-/*     L - Tech Stack & Programs - End    */
 
 
 /*     R - Default - Start    */
@@ -185,11 +145,6 @@ progress::-webkit-progress-value {
     margin-left: 0.5rem;
 }
 
-
-/*     R - Default - End    */
-
-
-/*     R - Professional Experience - Start    */
 .col-3{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr; /* to make sure that image always stays the same*/
@@ -200,6 +155,141 @@ progress::-webkit-progress-value {
 .description{
     grid-column: span 2;
 }
+/*     R - Default - End    */
 
 
-/*     R - Professional Experience - End    */
+/*    Section Specific - Start    */
+
+.round-img{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-image: url("./img/profilbild.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 1rem auto;
+}
+
+.padding-top{
+    padding-top: 1.5rem;
+}
+
+
+progress[value] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    
+    /* Get rid of default border in Firefox. */
+    border: none;
+
+    /* For IE10 */
+    color: #ffffff;
+    
+    /* these two don't work if put in the below classes - why??*/
+    height: 0.5em;
+    align-self: center;
+}
+
+progress[value]::-webkit-progress-bar {
+    /* style rules */
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    /* style rules */
+    background-color: #ffffff;
+    border-radius: 0.5em;
+}
+
+
+
+
+
+
+
+
+/*     Section Specific - Start - End    */
+
+/*     Media Queries - Start    */
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /*     Default Page Layout - Start    */
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    li,
+    p{
+        line-height: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .main-grid{
+        grid-template-columns: 20rem 1fr;
+    }
+
+    .box{
+        padding: 1rem 0;
+    }
+    
+    .row{
+        padding: 0.2rem 0;
+    }
+
+    .not-displayed{
+        display: none;
+    }
+
+    /*     Default Page Layout - End    */
+
+    /*     L - Default - Start    */
+    .col-left{
+        padding: 1rem;
+    }
+
+    /*look for better solution*/
+    .label{
+        min-width: 4rem;
+    }
+    /*     L - Default - End    */
+
+
+    /*    Section Specific - Start    */
+    .round-img{
+        width: 5rem;
+        height: 5rem;
+    }
+    /*    Section Specific - End    */
+
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    
+
+
+    .not-displayed{
+        display: none;
+    }
+  
+} 
+
+
+/*     Media Queries - End    */
