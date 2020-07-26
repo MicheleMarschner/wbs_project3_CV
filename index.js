@@ -1,21 +1,25 @@
 $(document).ready(function() {
-    var progressbar = $('#progressbar'),
-      max = progressbar.attr('max'),
-      time = (1000/max)*5,  
-        value = progressbar.val();
+
+
+
+    let progressbar = $('progress'),
+        time = (1000/100)*5, 
+        value = 0
+        maxValue = progressbar.val();
    
-    var loading = function() {
+    let loading = function() {
         value += 1;
-        addValue = progressbar.val(value);
-         
+        addValue = progressbar.val(value);  
+        
         $('.progress-value').html(value + '%');
    
-        if (value == max) {
-            clearInterval(animate);                
+       if (value ==  maxValue) {
+        clearInterval(animate);    
         }
+       
     };
    
-    var animate = setInterval(function() {
+    let animate = setInterval(function() {
         loading();
     }, time);
 
