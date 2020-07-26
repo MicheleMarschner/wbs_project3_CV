@@ -67,13 +67,18 @@ a{
     color: inherit;
 }
 
-.gridCol-2{
+.main-grid{
     display: grid;
-    grid-template-columns: 1fr 4fr; 
+    grid-template-columns: 25rem 1fr;
+    padding: 1rem 10rem;                /*screen*/
+}
+
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* to make sure that image always stays the same*/
     grid-gap: 0.5rem;
     padding: 0.1rem 0;
-} 
-
+}
 
 .box{
     padding: 1.5rem 0;
@@ -140,7 +145,7 @@ i{
     margin-left: 0.5rem;
 }
 
-.gridCol-3{
+.col-3{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr; /* to make sure that image always stays the same*/
     grid-gap: 0.5rem;
