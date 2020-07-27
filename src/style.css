@@ -67,6 +67,11 @@ a{
     color: inherit;
 }
 
+i {
+    font-size: 1.2rem;
+    align-self: center;
+}
+
 .main-grid{
     display: grid;
     grid-template-columns: 25rem 1fr;
@@ -88,18 +93,18 @@ a{
     padding: 0.5rem 0;
 }
 
-
-
 .title{
     text-transform: uppercase;
 }
 
 .centered{
     text-align: center;
+    align-self: center;
 }
 
 .centered i{
     padding: 0.5rem 1rem 0 1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -204,6 +209,19 @@ progress[value]::-webkit-progress-value {
 }
 
 
+.sub-skill p {
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+
+.sub-skill div {
+    display: inline-block;
+    border: white 2px solid;
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem;
+    text-transform: uppercase;
+}
+
 .col-left ul {
     list-style-type: none;
     margin: 0;
@@ -211,9 +229,10 @@ progress[value]::-webkit-progress-value {
 }
 
 
-
-
-
+#closingLine {
+    text-align: right;
+    padding-top: 3rem;
+    
 
 /*     Section Specific - End    */
 

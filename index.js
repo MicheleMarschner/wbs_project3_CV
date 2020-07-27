@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-
+/*
     let progressbar = $('progress'),
         time = (1000/100)*5, 
         value = 0
@@ -21,6 +21,6 @@ $(document).ready(function() {
    
     let animate = setInterval(function() {
         loading();
-    }, time);
+    }, time);*/
 
 });
