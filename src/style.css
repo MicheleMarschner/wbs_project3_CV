@@ -67,11 +67,6 @@ a{
     color: inherit;
 }
 
-i {
-    font-size: 1.2rem;
-    align-self: center;
-}
-
 .main-grid{
     display: grid;
     grid-template-columns: 25rem 1fr;
@@ -132,7 +127,8 @@ i {
 
 i{
     color: var(--secondary-color);
-    font-size: 0.5rem;
+    font-size: 1.2rem;
+    align-self: center;
 }
 
 /*look for better solution*/
@@ -232,7 +228,7 @@ progress[value]::-webkit-progress-value {
 #closingLine {
     text-align: right;
     padding-top: 3rem;
-    
+}   
 
 /*     Section Specific - End    */
 
