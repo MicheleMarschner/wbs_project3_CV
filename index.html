@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <div class="main-grid">
+    <div id="root" class="main-grid">
 
     <!-------------      Left Column - Start       ---------------->
 
@@ -358,8 +358,23 @@
 
 <!-------------      Import Script Section - Start    ---------------->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA==" crossorigin="anonymous"></script>
 <script src="index.js"></script>
+<script>
+/*
+    const genPDF = () => {
+        html2canvas (document.body, {
+            onrendered: function(canvas) {
+                let img = canvas.toDataURL("image/png");
+                let doc = new jsPDF();
+                doc.addImage(img, 'JPEG', 20, 20);
+                doc.save('Michele Marschner_CV.pdf');
+            }
+        });
+    }
+    genPDF();*/
+</script>
 <!-------------      Import Script Section - End    ---------------->
   
 
