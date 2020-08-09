@@ -62,9 +62,9 @@ p{
 }
 
 a{
-    text-decoration: none;
-    outline: none;
-    color: inherit;
+    text-decoration: none !important;
+    outline: none !important;
+    color: inherit !important;
 }
 
 .main-grid{
@@ -73,18 +73,18 @@ a{
     padding: 1rem 10rem;                /*screen*/
 }
 
-.col-2{
+.Col-2{
     display: grid;
     grid-template-columns: 1fr 4fr; /* to make sure that image always stays the same*/
     grid-gap: 0.5rem;
     padding: 0.1rem 0;
 }
 
-.box{
+.Box{
     padding: 1.5rem 0;
 }
 
-.row{
+.Row{
     padding: 0.5rem 0;
 }
 
@@ -119,7 +119,7 @@ a{
 
 
 /*     L - Default - Start    */
-.col-left{
+.Col-left{
     background-color: var(--highlight-color);
     color: var(--secondary-color); 
     padding: 1.5rem;
@@ -140,13 +140,13 @@ i{
 
 
 /*     R - Default - Start    */
-.col-right{
+.Col-right{
     color: #000000;
     padding: 1rem;
     margin-left: 0.5rem;
 }
 
-.col-3{
+.Col-3{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr; /* to make sure that image always stays the same*/
     grid-gap: 0.5rem;
@@ -195,7 +195,7 @@ progress[value] {
 progress[value]::-webkit-progress-bar {
     /* style rules */
     border-radius: 0.5em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    Box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 progress[value]::-webkit-progress-value {
@@ -218,17 +218,51 @@ progress[value]::-webkit-progress-value {
     text-transform: uppercase;
 }
 
-.col-left ul {
+.Col-left ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-
 #closingLine {
-    text-align: right;
+    display: flex;
     padding-top: 3rem;
+    justify-content: space-between;
 }   
+
+#closingLine img{
+    width: 20%;
+}   
+
+#portfolio {
+    padding: 3rem 10rem;   
+}
+
+#portfolio .card:not(:last-child){
+   margin-right: 8rem;
+}
+
+#portfolio .card-img-top{
+    height: 15rem;
+}
+
+#portfolio .overlay{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./img/Senioren App.JPG") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#portfolio .card-footer{
+    margin-top: auto;
+}
+
+#portfolio i{
+    color: black;
+}
 
 /*     Section Specific - End    */
 
@@ -263,11 +297,11 @@ progress[value]::-webkit-progress-value {
         grid-template-columns: 20rem 1fr;
     }
 
-    .box{
+    .Box{
         padding: 1rem 0;
     }
     
-    .row{
+    .Row{
         padding: 0.2rem 0;
     }
 
@@ -278,7 +312,7 @@ progress[value]::-webkit-progress-value {
     /*     Default Page Layout - End    */
 
     /*     L - Default - Start    */
-    .col-left{
+    .Col-left{
         padding: 1rem;
     }
 
