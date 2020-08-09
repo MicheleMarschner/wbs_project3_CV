@@ -269,7 +269,20 @@ progress[value]::-webkit-progress-value {
 /*     Media Queries - Start    */
 
 /* Medium Layout: 1280px. */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+    .main-grid{
+        padding: 0;
+    }
+
+    #portfolio {
+        padding: 3rem 1.5rem;   
+    }
+    
+    #portfolio .card:not(:last-child){
+        margin-right: 3rem;
+    }
+
+
 
 
 }
@@ -278,7 +291,6 @@ progress[value]::-webkit-progress-value {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     /*     Default Page Layout - Start    */
-
     h1{
         font-size: 1.5rem;
     }
@@ -295,6 +307,7 @@ progress[value]::-webkit-progress-value {
 
     .main-grid{
         grid-template-columns: 20rem 1fr;
+        padding: 0;
     }
 
     .Box{
@@ -329,6 +342,13 @@ progress[value]::-webkit-progress-value {
         height: 5rem;
     }
     /*    Section Specific - End    */
+    #portfolio {
+        padding: 3rem 1.5rem;   
+    }
+    
+    #portfolio .card:not(:last-child){
+        margin-right: 1rem;
+    }
 
 }
 
